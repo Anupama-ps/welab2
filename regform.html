@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<script>
+    var res=document.getElementById("res").id
+    var reg=document.getElementById("reg").id
+
+    function reg(){
+        alert(" Successfully Registered!!")
+    }
+    var res=getElementById("res").id
+    function res(){
+        confirm("Sure to Reset?")
+    }
+</script>
+<body>
+    <marquee behavior="scroll" direction="" onmouseover="stop()" onmouseout="start()">
+        <h1>Student Registration form</h1>
+    </marquee>
+    <form>
+        <table>
+            <tr>
+                <th>First name:</th>
+                <td><input class="inp" type="text" name="" id="fname" placeholder="Enter your first name:" required></td>
+            </tr>
+            <tr>
+                <th>Last name:</th>
+                <td><input class="inp" type="text" name="" id="lname" placeholder="Enter your last name:" required></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input class="inp" type="email" name="" id="email" placeholder="abc@def.com" required></td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td><input class="inp" type="number" name="" id="phn" placeholder="Enter your phone number(1-9 only):" required></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    Male:
+                    <input type="radio" name="gender" id="male">
+                    Female:
+                    <input type="radio" name="gender" id="female">
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth:</th>
+                <td><input class="inp" type="date" name="" id="" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea class="inp" name="" id="" placeholder="Enter your address" required></textarea></td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td><input class="inp" type="text" name="" id="" required></td>
+            </tr>
+            <tr>
+                <th>Pincode:</th>
+                <td><input class="inp" type="number" name="" id="" required></td>
+            </tr>
+            <tr>
+                <th>State:</th>
+                <td><input class="inp" type="text" name="" id="" required></td>
+            </tr>
+            <tr>
+                <th>Qualification:</th>
+                <td>
+                    <select name="qual" id="" required>
+                        <option value="none">None</option>
+                        <option value="10">10th</option>
+                        <option value="12">12th</option>
+                        <option value="UG">UG</option>
+                        <option value="PG">PG</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Specification:</th>
+                <td>
+                    <input type="checkbox" name="Spec" id="cs">Computer Science
+                    <br><input type="checkbox" name="Spec" id="it">Information Technology
+                    <br><input type="checkbox" name="Spec" id="ca">Computer Architecture
+                    <br><input type="checkbox" name="Spec" id="tc">Tele Communication
+                </td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input class="inp" type="pass" name="" id=""></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><input class="reg" type="submit" onclick="validation()" value="REGISTER"></td>
+                <td><input class="res" type="reset" onclick="res()" value="RESET"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
